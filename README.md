@@ -4,7 +4,7 @@ A drag & drop "kanban board" example with Clojure
 
 Blog post: TODO
 
-Demo: [https://clj-board.herokuapp.com]
+Demo: https://clj-board.herokuapp.com
 
 ## Screenshots
 
