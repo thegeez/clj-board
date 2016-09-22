@@ -26,7 +26,10 @@
         root (str (.getDomain uri) (when (.hasPort uri)
                                      (str ":" (.getPort uri))))
         jwt (.getItem js/localStorage "authToken")
-        w (js/WebSocket. (str "ws:" root "/ws?token=" jwt "&random=" random-id))
+        proto (if (= (apply str (take 9 root)) "localhost")
+                "ws:"
+                "wss:")
+        w (js/WebSocket. (str proto root "/ws?token=" jwt "&random=" random-id))
         _ (swap! retries inc)
         heart-beat (fn heart-beat []
                      (send-msg [:heart-beat])
