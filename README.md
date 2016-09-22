@@ -9,7 +9,7 @@ A drag & drop "kanban board" example with Clojure
 ### Card
 ![Card](/resources/screenshot/cljboard-card.png "Full card")
 ### Drag & drop
-![Drag and Drop](/resources/screenshot/cljboard-drag.png "Drag and drop
+![Drag and Drop](/resources/screenshot/cljboard-drag.png "Drag and drop")
 
 ### Development
 This uses an in-process/in-memory only database. In the `user` namespace, through `lein repl/cider` etc.:
