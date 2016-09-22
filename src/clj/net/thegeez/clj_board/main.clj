@@ -57,7 +57,7 @@
     (log/info :msg "Running the database migrator to clean database")
     (migrator/migrate! db-spec migrations/migrations 0)
     (log/info :msg "Running the database migrator to build database")
-    (migrator/migrate! db-spec migrations/migrations 0)
+    (migrator/migrate! db-spec migrations/migrations)
     (log/info :msg "Database migrator done")
     (log/info :msg "Inserting fixtures")
     (fixtures/insert-fixtures! db-spec)
