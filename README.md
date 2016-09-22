@@ -2,7 +2,7 @@
 
 A drag & drop "kanban board" example with Clojure
 
-Blog post: TODO
+Blog post: http://thegeez.net/2016/09/22/trello_clone_clone_in_clojure.html
 
 Demo: https://clj-board.herokuapp.com
 
@@ -28,7 +28,7 @@ The site runs under http://localhost:8080.
    lein uberjar
    java -jar target/clj-board-prod-standalone.jar PORT DB-URL
 ```
-
+The app requires a PostgreSQL database add-on.
 Run the database migrations from the repl:
 ```
     heroku run java -cp target/clj-board-prod-standalone.jar clojure.main
