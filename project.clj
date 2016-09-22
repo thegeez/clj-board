@@ -36,6 +36,8 @@
 
   :resource-paths ["config", "resources"]
 
+  :min-lein-version "2.0.0"
+
   :source-paths ["src/clj"]
   :profiles {:dev {:source-paths ["dev/clj"]
                    :main user
