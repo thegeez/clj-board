@@ -13,11 +13,6 @@
             [net.thegeez.clj-board.websocket-service :as websocket-service])
   (:gen-class))
 
-(def prod-config {:db-connect-string "jdbc:derby:memory:cljboard;create=true"
-                  :port 8080
-                  :migrations migrations/migrations
-                  })
-
 (defn -main [port database-url & args]
   (log/info :msg "Hello world this is the production system")
   (let [port (try (Long/parseLong port)
