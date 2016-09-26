@@ -13,7 +13,6 @@
     [{:id "dev"
       :figwheel {:on-jsload "net.thegeez.clj-board.dev/reload"}
       :source-paths ["src/cljs" "dev/cljs"]
-      :notify-command ["notify-send"]
       :compiler {:main "net.thegeez.clj-board.core"
                  :asset-path "/js/out"
                  :output-to "resources/public/js/app.js"
