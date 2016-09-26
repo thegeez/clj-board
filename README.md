@@ -24,7 +24,9 @@ This uses an in-process/in-memory only database. In the `user` namespace, throug
 The site runs under http://localhost:8080.
 
 ### Running production uberjar (for heroku):
+Compile the ClojureScript in advanced compilation and make an uberjar:
 ```
+   lein run -m user/cljs-compile
    lein uberjar
    java -jar target/clj-board-prod-standalone.jar PORT DB-URL
 ```
